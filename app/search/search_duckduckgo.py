@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from app.config.settings import QUERY, MAX_RESULTS
+from app.config import QUERY, MAX_RESULTS
 
 def search_duckduckgo(query=QUERY, exclude_urls=[], max_results=MAX_RESULTS):
     base_url = "https://duckduckgo.com/html/"
