@@ -1,0 +1,13 @@
+version: "3.9"  # 必須のバージョン指定
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: search_app
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    command: python main.py

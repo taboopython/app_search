@@ -1,0 +1,10 @@
+# 必須ライブラリ
+requests==2.31.0          # HTTPリクエスト用
+beautifulsoup4==4.12.2    # HTMLパース用
+python-dotenv==1.0.0      # 環境変数管理
+
+# データベース用（SQLite対応は標準ライブラリで可能だが、拡張用に記載）
+sqlite-utils==3.32.1      # SQLite補助（必要に応じて）
+
+# ロギングやデバッグに必要なら以下も追加
+loguru==0.7.0
